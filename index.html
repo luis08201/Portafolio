@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/513e65e438.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="#acerca" class="header__link" onclick="toggleMenu()">Acerca de</a>
+            <a href="#trabajos" class="header__link" onclick="toggleMenu()">Trabajos</a>
+            <a href="#contacto" class="header__link" onclick="toggleMenu()">Contacto</a>
+        </nav>
+        <section class="header__banner">
+            <h1 class="header__firstheading">Luis Selva</h1>
+            <h2 class="header__secondheading">Ingeniero en computación</h2>
+        </section>
+        <section class="header__user" id="acerca">
+            <figure class="user__picture">
+                <img src="img/avatar.png" alt="luis selva photo" class="user__photo">
+            </figure>
+            <article class="user__article">
+                <h2 class="user__secondheading">Acerca de</h2>
+                <p class="user__paragraph">Me considero una persona disciplinada y determinado. Con ansias de aprender todo lo relacionado al mundo de la
+                Informatica, especialmente dedicarme al mundo FrontEnd. Ademas, me gusta trabajar en equipo.</p>
+            </article>
+        </section>
+        <div class="header__toggle">
+            <div class="header__toggleMenu" id="toggleMenu" onclick="toggleMenu()"></div>
+        </div>
+    </header>
+    <main class="container">      
+        <section class="container__trabajos" id="trabajos">
+            <div class="trabajo__bigbox">
+                <article class="trabajo__box">
+                    <figure class="trabajo__picture">
+                        <a href="https://luis08201.github.io/SYDICOM/" class="trabajo__link" target="_blank">
+                        <img src="img/trabajo1-min.png" alt="trabajo #1 photo" class="trabajo__img">
+                        </a>
+                    </figure>
+                    <div class="trabajo__description">
+                        <h4 class="trabajo__smallheading">Pagina web Sydicom</h4>
+                        <p class="trabajo__paragraph">HTML - CSS - JS</p>
+                    </div>
+                </article>
+                <article class="trabajo__box">
+                    <figure class="trabajo__picture">
+                        <a href="https://luis08201.github.io/isic-version2021/" class="trabajo__link" target="_blank">
+                        <img src="img/trabajo2-min.png" alt="trabajo #1 photo" class="trabajo__img">
+                        </a>
+                    </figure>
+                    <div class="trabajo__description">
+                        <h4 class="trabajo__smallheading">Pagina web ISIC</h4>
+                        <p class="trabajo__paragraph">HTML - CSS - JS</p>
+                    </div>
+                </article>
+                <article class="trabajo__box">
+                    <figure class="trabajo__picture">
+                        <a href="https://github.com/luis08201/Frontend-mentor-practices/" class="trabajo__link" target="_blank">
+                        <img src="img/trabajo3-min.png" alt="reto realizado de frontend mentor" class="trabajo__img">
+                        </a>
+                    </figure>
+                    <div class="trabajo__description">
+                        <h4 class="trabajo__smallheading">Retos realizados de Frontend Mentor</h4>
+                        <p class="trabajo__paragraph">HTML - CSS - JS</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="container__contacto" id="contacto">
+            <div class="contacto__box">
+                <h2 class="contacto__secondheading">Contacto</h2>
+                <form action="formulario.php" method="POST" class="contacto__form">
+                    <div class="contacto__form--header" id="contacto__form--nombre">
+                        <div class="contacto__form--nombre">
+                            <input type="text" class="contacto__input--nombre"  id="contacto__input--nombre" placeholder="Nombre" name="name">
+                            <span class="contacto__input--nombre--txt"></span>
+                            <i class="contacto__input--nombre--ico fa"></i>
+                        </div>
+                        <div class="contacto__form--correo" id="contacto__form--correo">
+                            <input type="email" name="email" id="contacto__input--correo" class="contacto__input--correo" placeholder="Correo electronico">
+                            <span class="contacto__input--correo--txt"></span>
+                            <i class="contacto__input--correo--ico fa"></i>
+                        </div>
+                    </div>
+                    <div class="contacto__form--body">
+                        <div class="contacto__form--mensaje">
+                            <textarea name="message" id="" cols="30" rows="10" class="contacto__input--mensaje" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="contacto__form--button">
+                            <button type="submit"  class="contacto__form--btn">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__bigbox">
+            <p class="footer__paragraph">Codificado por<a href="https://github.com/luis08201" class="footer__link" target="__blank">Luis Selva</a>. 2021</p>
+            <div class="footer__scn">
+               <a href="https://github.com/luis08201" class="footer__btn fab fa-github"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+</html>

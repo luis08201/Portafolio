@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Urbanist:wght@300;400;700&display=swap');
+
+/* FONTS */
+$principal__font: 'Urbanist', sans-serif;
+$secondary__font:'Poppins', sans-serif;
+$font-size:15px;
+
+$blue_color:#3895EA;
+$gray_color:#FCFCFC;
+$dark_blue_color:#1E2B38;
+
+:root{
+    font-family: $secondary__font;
+    font-size: $font-size;
+    scroll-behavior: smooth;
+}
+
+input,button,textarea{
+    font-family:$secondary__font;
+    font-size: $font-size;
+}
