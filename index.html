@@ -74,7 +74,7 @@
         <section class="container__contacto" id="contacto">
             <div class="contacto__box">
                 <h2 class="contacto__secondheading">Contacto</h2>
-                <form action="" class="contacto__form">
+                <form action="https://formspree.io/f/xrgrjzpl" method="POST"  class="contacto__form" id="form">
                     <div class="contacto__form--header" id="contacto__form--nombre">
                         <div class="contacto__form--nombre">
                             <input type="text" class="contacto__input--nombre"  id="contacto__input--nombre" placeholder="Nombre" name="name">
@@ -92,7 +92,7 @@
                             <textarea name="message" id="" cols="30" rows="10" class="contacto__input--mensaje" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="contacto__form--button">
-                            <button type="submit"  class="contacto__form--btn">Enviar</button>
+                            <button type="submit" class="contacto__form--btn" id="btn">Enviar</button>
                         </div>
                     </div>
                 </form>
@@ -107,7 +107,14 @@
             </div>
         </div>
     </footer>
-    
+   <section class="modal__formulario" id="ventana">
+       <button class="modal__formulario--btn fas fa-times" id="modal__formulario--btn"></button>
+       <h2 class="modal__formulario--secondheading">Muchas gracias por ponerse en contacto.</h2>
+       <p class="modal__formulario--paragraph">Muy pronto me pondré en contacto con usted.</p>
+   </section>
+
+
+    <script src="js/contacto.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/validacion.js"></script>
 </body>
