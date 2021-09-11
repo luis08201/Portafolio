@@ -46,12 +46,12 @@ email.addEventListener('input', () => {
     emailBox.classList.remove('contacto__input--valid');/*AGREGA ESTILOS AL INPUT CUANDO LOS DATOS SON VALIDOS*/
     emailIco.classList.remove('fa-check-circle');      /*ELIMINA ICONO DE VERIFICADO*/
     emailIco.classList.add('fa-exclamation-circle');   /*AGREGA ICONO DE WARNING */
-    emailText.innerHTML = "Email Address cannot be empty" /* INGRESA TEXTO EN LA ETIQUETA SPAN */
+    emailText.innerHTML = "Por favor ingrese su correo" /* INGRESA TEXTO EN LA ETIQUETA SPAN */
   } else {
     emailBox.classList.add('contacto__input--invalid');/*ELIMINA ESTILOS AL INPUT CUANDO LOS DATOS SON VALIDOS*/
     emailBox.classList.remove('contacto__input--valid');/*AGREGA ESTILOS AL INPUT CUANDO LOS DATOS SON VALIDOS*/
     emailIco.classList.remove('fa-check-circle');      /*ELIMINA ICONO DE VERIFICADO*/
     emailIco.classList.add('fa-exclamation-circle');   /*AGREGA ICONO DE WARNING */
-    emailText.innerHTML = "Looks like this is not an email" /* INGRESA TEXTO EN LA ETIQUETA SPAN */
+    emailText.innerHTML = "Ops!, vuelva a intentarlo" /* INGRESA TEXTO EN LA ETIQUETA SPAN */
   } 
 })

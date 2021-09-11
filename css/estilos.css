@@ -93,10 +93,10 @@ input, button, textarea {
 
 .header__user {
   position: absolute;
-  bottom: -47%;
+  bottom: -48%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +110,7 @@ input, button, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1000px;
 }
 
 .container {
@@ -572,6 +573,19 @@ input, button, textarea {
   /* CONTACTO */
   .contacto__secondheading {
     font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header__user {
+    -webkit-transform: translate(-50%, -24%);
+            transform: translate(-50%, -24%);
+  }
+  /* USER */
+  .user__article {
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

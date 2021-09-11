@@ -64,13 +64,14 @@
   }
   &__user {
     position: absolute;
-    bottom: -47%;
+    bottom: -48%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width:1000px;
   }
 }
 .container {
@@ -460,4 +461,19 @@
       font-size: 1.7rem;
     }
   }
+}
+@media screen and (max-width:375px){
+  .header {
+ &__user {
+    transform: translate(-50%, -24%);
+ }
+}
+/* USER */
+.user {
+  &__article {
+    margin-top: 1.3rem;
+    margin-bottom : 1.3rem;
+    text-align: center;
+  }
+}
 }
